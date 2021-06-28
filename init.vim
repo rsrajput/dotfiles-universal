@@ -4,6 +4,16 @@ set nu
 set rnu
 syntax on
 set ignorecase
+set nohlsearch
+set hidden
+set smartcase
+set noswapfile
+set incsearch
+set termguicolors
+set scrolloff=8
+set completeopt=menuone,noinsert,noselect
+set signcolumn=yes
+set colorcolumn=80
 set shortmess-=S
 set pyxversion=3
 
@@ -11,10 +21,11 @@ set pyxversion=3
 set textwidth=79  " lines longer than 79 columns will be broken
 set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
 set tabstop=4     " a hard TAB displays as 4 columns
-set expandtab     " insert spaces when hitting TABs
 set softtabstop=4 " insert/delete 4 spaces when hitting a TAB/BACKSPACE
+set expandtab     " insert spaces when hitting TABs
 set shiftround    " round indent to multiple of 'shiftwidth'
-set autoindent    " align the new line indent with the previous line
+set smartindent
+" set autoindent    " align the new line indent with the previous line
 " PYTHON PEP-8 END
 "
 "edv lua <<EOF require'nvim-treesitter.configs'.setup {} EOF
@@ -55,18 +66,14 @@ let g:netrw_winsize = 20
 set autoindent
 filetype plugin indent on
 
-if filereadable(".vim.custom")
-    so .vim.custom
-endif
-
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-surround'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc-pyright', {'do': 'yarn install --frozen-lockfile'}
-" Plug 'davidhalter/jedi-vim'
 Plug 'marcweber/vim-addon-local-vimrc'
 Plug 'joshdick/onedark.vim'
 Plug 'scrooloose/syntastic'
+" Plug 'davidhalter/jedi-vim'
 
 " Yes, I am a sneaky snek now
 Plug 'ambv/black'
@@ -291,7 +298,7 @@ vmap <Tab> >gv
 vmap <S-Tab> <gv
 set mouse=a
 let g:is_mouse_enabled = 1
-colo gruvbox
+colorscheme gruvbox
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 " colo onedark
 " augroup THE_PRIMEAGEN
