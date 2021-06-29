@@ -47,17 +47,17 @@ if has('win64') || has('win32') || has('win16')
 endif
 " Plant Win10 specific End
 
-" Macbook specific Begin ; Linux Mint specific Begin
+" Macbook specific Begin
 if has("unix")
   let s:uname = system("uname")
   if s:uname == "Darwin\n"
     let g:python_host_prog = '/usr/bin/python2'
     let g:python3_host_prog = '/Users/rsrajput/opt/anaconda3/bin/python'
   else
-    let g:python3_host_prog = '/usr/bin/python3'
+    let g:python3_host_prog = '/usr/bin/python3'   " Linux Mint specific 
   endif
 endif
-" Macbook specific End ; Linux Mint specific End
+" Macbook specific End
 
 let g:ycm_filetype_whitelist = {'cpp': 1}
 let g:ycm_disable_for_files_larger_then_kb = 0
