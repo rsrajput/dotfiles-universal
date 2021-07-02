@@ -287,7 +287,7 @@ augroup END
 
 " enable line numbers
 let NERDTreeShowLineNumbers=1
-let g:line_theme='gruvbox'
+let g:airline_theme='gruvbox'
 " make sure relative line numbers are used
 autocmd FileType nerdtree setlocal relativenumber
 
