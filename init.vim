@@ -16,6 +16,7 @@ set signcolumn=yes
 set colorcolumn=80
 set shortmess-=S
 set pyxversion=3
+set cursorline
 
 " PYTHON PEP-8 BEGIN
 set textwidth=79  " lines longer than 79 columns will be broken
@@ -67,6 +68,7 @@ set autoindent
 filetype plugin indent on
 
 call plug#begin('~/.vim/plugged')
+Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-surround'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc-pyright', {'do': 'yarn install --frozen-lockfile'}
@@ -97,6 +99,8 @@ Plug 'szw/vim-maximizer'
 Plug 'bryall/contextprint.nvim'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'sukima/xmledit'
 " Plug 'scrooloose/nerdtree'
 Plug 'preservim/nerdtree'
@@ -283,7 +287,7 @@ augroup END
 
 " enable line numbers
 let NERDTreeShowLineNumbers=1
-let g:airline_theme='gruvbox'
+let g:line_theme='gruvbox'
 " make sure relative line numbers are used
 autocmd FileType nerdtree setlocal relativenumber
 
