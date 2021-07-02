@@ -165,6 +165,7 @@ Plug 'majutsushi/tagbar'
 Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'ap/vim-buftabline'
 Plug 'jistr/vim-nerdtree-tabs'
+Plug 'NLKNguyen/papercolor-theme'
 call plug#end()
 
 " Use <c-space> to trigger completion.
