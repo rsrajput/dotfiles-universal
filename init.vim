@@ -172,6 +172,7 @@ Plug 'ap/vim-buftabline'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
+Plug 'ervandew/supertab'
 call plug#end()
 
 " Use <c-space> to trigger completion.
