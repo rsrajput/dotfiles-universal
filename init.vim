@@ -1,4 +1,4 @@
-set exrc " Wont open project .nviPlug 'NLKNguyen/papercolor-theme'mrc without this here
+set exrc " Wont open project .nvimrc without this here
 
 set nu
 set rnu
