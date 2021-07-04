@@ -173,6 +173,7 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
 Plug 'ervandew/supertab'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 " Use <c-space> to trigger completion.
