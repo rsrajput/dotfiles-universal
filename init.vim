@@ -175,6 +175,7 @@ Plug 'morhetz/gruvbox'
 Plug 'ervandew/supertab'
 Plug 'jiangmiao/auto-pairs'
 Plug 'ryanoasis/vim-devicons'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 " Use <c-space> to trigger completion.
