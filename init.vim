@@ -41,10 +41,13 @@ set smartindent
 " endif
 
 " Plant Win10 specific Begin
+"
+let mapleader = " "
 if has('win64') || has('win32') || has('win16')
     let g:python3_host_prog = 'E:\Programs\Anaconda3\python3.exe'
     let g:coc_node_path = 'C:\PROGRA~1\nodejs\node.exe'
     let g:tagbar_ctags_bin = 'E:\Programs\Anaconda3\ctags58\ctags.exe'
+    nnoremap <Leader><CR> :so ~/AppData/Local/nvim/init.vim<CR>
 endif
 " Plant Win10 specific End
 
@@ -54,8 +57,10 @@ if has("unix")
   if s:uname == "Darwin\n"
     let g:python_host_prog = '/usr/bin/python2'
     let g:python3_host_prog = '/Users/rsrajput/opt/anaconda3/bin/python'
+    nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>
   else
     let g:python3_host_prog = '/usr/bin/python3'   " Linux Mint specific 
+    nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>
   endif
 endif
 " Macbook specific End
@@ -187,7 +192,6 @@ if executable('rg')
 endif
 
 let loaded_matchparen = 1
-let mapleader = " "
 
 nnoremap <leader>cP :lua require("contextprint").add_statement()<CR>
 nnoremap <leader>cp :lua require("contextprint").add_statement(true)<CR>
@@ -204,7 +208,6 @@ nnoremap <C-j> :bnext<CR>
 nnoremap <C-q> :bdelete<CR>
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>pv :Sex!<CR>
-nnoremap <Leader><CR> :so ~/AppData/Local/nvim/init.vim<CR>
 " nnoremap <Leader><CR> :so ~/.config/nvim/init.vim<CR>
 nnoremap <Leader>+ :vertical resize +5<CR>
 nnoremap <Leader>- :vertical resize -5<CR>
