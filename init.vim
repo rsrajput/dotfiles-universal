@@ -77,6 +77,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-surround'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc-pyright', {'do': 'yarn install --frozen-lockfile'}
+Plug 'fannheyward/coc-pyright'
 Plug 'marcweber/vim-addon-local-vimrc'
 Plug 'joshdick/onedark.vim'
 Plug 'scrooloose/syntastic'
