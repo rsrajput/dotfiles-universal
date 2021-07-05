@@ -177,6 +177,7 @@ Plug 'ervandew/supertab'
 Plug 'jiangmiao/auto-pairs'
 Plug 'ryanoasis/vim-devicons'
 Plug 'sheerun/vim-polyglot'
+Plug 'nvie/vim-flake8'
 call plug#end()
 
 " Use <c-space> to trigger completion.
