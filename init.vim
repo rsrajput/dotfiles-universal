@@ -179,6 +179,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'sheerun/vim-polyglot'
 Plug 'nvie/vim-flake8'
 Plug 'arcticicestudio/nord-vim'
+" Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
 call plug#end()
 
 " Use <c-space> to trigger completion.
@@ -299,7 +301,7 @@ augroup END
 
 " enable line numbers
 let NERDTreeShowLineNumbers=1
-let g:airline_theme='gruvbox'
+" let g:airline_theme='gruvbox'
 " make sure relative line numbers are used
 autocmd FileType nerdtree setlocal relativenumber
 
