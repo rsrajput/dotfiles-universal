@@ -179,6 +179,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'sheerun/vim-polyglot'
 Plug 'nvie/vim-flake8'
 Plug 'codota/tabnine-vim'
+Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
 " Use <c-space> to trigger completion.
