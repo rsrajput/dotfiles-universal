@@ -105,7 +105,6 @@ Plug 'szw/vim-maximizer'
 Plug 'bryall/contextprint.nvim'
 Plug 'tpope/vim-surround'
 Plug 'bling/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'sukima/xmledit'
 " Plug 'scrooloose/nerdtree'
 Plug 'preservim/nerdtree'
@@ -179,7 +178,10 @@ Plug 'sheerun/vim-polyglot'
 Plug 'nvie/vim-flake8'
 Plug 'arcticicestudio/nord-vim'
 " Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
+
+let g:airline#extensions#tabline#enabled = 1
 
 " Use <c-space> to trigger completion.
 if has('nvim')
@@ -299,7 +301,6 @@ augroup END
 
 " enable line numbers
 let NERDTreeShowLineNumbers=1
-" let g:airline_theme='gruvbox'
 " make sure relative line numbers are used
 autocmd FileType nerdtree setlocal relativenumber
 
@@ -315,6 +316,7 @@ vmap <S-Tab> <gv
 set mouse=a
 let g:is_mouse_enabled = 1
 colorscheme gruvbox
+let g:airline_theme='gruvbox'
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 " colo onedark
 " augroup THE_PRIMEAGEN
@@ -325,31 +327,32 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 " augroup END
 
 " air-line
-let g:airline_powerline_fonts = 1
+"let g:airline_powerline_fonts = 1
 
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
+"if !exists('g:airline_symbols')
+"    let g:airline_symbols = {}
+"endif
 
-" unicode symbols
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
+"" unicode symbols
+"let g:airline_left_sep = '»'
+"let g:airline_left_sep = '▶'
+"let g:airline_right_sep = '«'
+"let g:airline_right_sep = '◀'
+"let g:airline_symbols.linenr = '␊'
+"let g:airline_symbols.linenr = '␤'
+"let g:airline_symbols.linenr = '¶'
+"let g:airline_symbols.branch = '⎇'
+"let g:airline_symbols.paste = 'ρ'
+"let g:airline_symbols.paste = 'Þ'
+"let g:airline_symbols.paste = '∥'
+"let g:airline_symbols.whitespace = 'Ξ'
 
-" airline symbols
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
+"" airline symbols
+"let g:airline_left_sep = ''
+"let g:airline_left_alt_sep = ''
+"let g:airline_right_sep = ''
+"let g:airline_right_alt_sep = ''
+"let g:airline_symbols.branch = ''
+"let g:airline_symbols.readonly = ''
+"let g:airline_symbols.linenr = ''
+
