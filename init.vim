@@ -104,7 +104,6 @@ Plug 'szw/vim-maximizer'
 " THANKS BFREDL
 Plug 'bryall/contextprint.nvim'
 Plug 'tpope/vim-surround'
-Plug 'vim-airline/vim-airline'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'sukima/xmledit'
@@ -180,7 +179,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'nvie/vim-flake8'
 Plug 'arcticicestudio/nord-vim'
 " Plug 'itchyny/lightline.vim'
-Plug 'vim-airline/vim-airline'
 call plug#end()
 
 " Use <c-space> to trigger completion.
