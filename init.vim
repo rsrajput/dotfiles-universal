@@ -327,7 +327,6 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 " augroup END
 
 " air-line
-let g:airline_powerline_fonts = 1
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
@@ -357,3 +356,4 @@ let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
 let g:airline_theme='gruvbox'
+let g:airline_powerline_fonts = 1
