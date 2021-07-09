@@ -245,6 +245,7 @@ nnoremap <leader>Y gg"+yG
 
 " popup resize
 nnoremap <leader>x :set lines=30 <bar> :set columns=100<cr>
+nnoremap <leader>v :AirlineTheme gruvbox<cr>
 
 " vim TODO
 nmap <Leader>tu <Plug>BujoChecknormal
