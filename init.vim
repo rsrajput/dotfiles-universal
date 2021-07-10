@@ -242,6 +242,7 @@ vnoremap <leader>p "_dP
 nnoremap <leader>y "+y
 vnoremap <leader>y "+y
 nnoremap <leader>Y gg"+yG
+nnoremap <leader>P "+p
 
 " popup resize
 nnoremap <leader>x :set lines=30 <bar> :set columns=100<cr>
