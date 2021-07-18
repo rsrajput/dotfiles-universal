@@ -180,7 +180,7 @@ Plug 'nvie/vim-flake8'
 Plug 'arcticicestudio/nord-vim'
 " Plug 'itchyny/lightline.vim'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'fatih/vim-go'   " then run :GoInstallBinaries (https://medium.com/@furkanbegen/go-development-with-vim-79cfa0a928b0)
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }   " then run :GoInstallBinaries (https://medium.com/@furkanbegen/go-development-with-vim-79cfa0a928b0)
 call plug#end()
 
 let g:airline#extensions#tabline#enabled = 1
