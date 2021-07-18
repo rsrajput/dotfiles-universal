@@ -329,6 +329,7 @@ set mouse=a
 let g:is_mouse_enabled = 1
 colorscheme gruvbox
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
 au filetype go inoremap <buffer> . .<C-x><C-o>
 " colo onedark
 " augroup THE_PRIMEAGEN
