@@ -323,7 +323,7 @@ autocmd FileType nerdtree setlocal relativenumber
 nnoremap <esc> :noh<return><esc>
 "Remove all trailing whitespace by pressing leader W
 nnoremap <leader>W :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
-nnoremap <leader>t :vnew term://bash
+nnoremap <leader>t :vnew term://bash<CR>
 
 " from Youtube video "Setting up vim to work with python applications - by Miguel Grinberg
 " indent/unindent with tab/shift-tab
