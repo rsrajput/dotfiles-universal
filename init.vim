@@ -11,7 +11,7 @@ set noswapfile
 set incsearch
 set termguicolors
 set scrolloff=8
-set completeopt=menuone,noinsert,noselect
+set completeopt=longest,menuone
 set signcolumn=yes
 set colorcolumn=80
 set shortmess-=S
@@ -259,6 +259,12 @@ nnoremap <Leader>ww ofunction wait(ms: number): Promise<void> {<CR>return new Pr
 inoremap jk <esc>
 inoremap kj <esc>
 " inoremap <C-c> <esc>
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
+  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
+inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
+  \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
 fun! EmptyRegisters()
     let regs=split('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/-"', '\zs')
