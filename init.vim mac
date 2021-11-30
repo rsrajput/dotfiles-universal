@@ -19,7 +19,7 @@ set pyxversion=3
 set cursorline
 
 " PYTHON PEP-8 BEGIN
-set textwidth=79  " lines longer than 79 columns will be broken
+" set textwidth=79  " lines longer than 79 columns will be broken
 set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
 set tabstop=4     " a hard TAB displays as 4 columns
 set softtabstop=4 " insert/delete 4 spaces when hitting a TAB/BACKSPACE
@@ -44,6 +44,9 @@ set smartindent
 "
 let mapleader = " "
 nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
+" By default timeoutlen is 1000 ms
+set timeoutlen=500
+
 if has('win64') || has('win32') || has('win16')
     let g:python3_host_prog = 'E:\Programs\Anaconda3\python3.exe'
     let g:coc_node_path = 'C:\PROGRA~1\nodejs\node.exe'
@@ -109,7 +112,6 @@ Plug 'tpope/vim-surround'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline'
 Plug 'sukima/xmledit'
-" Plug 'scrooloose/nerdtree'
 Plug 'preservim/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 " Plug 'valloric/youcompleteme'
@@ -183,20 +185,11 @@ Plug 'arcticicestudio/nord-vim'
 " Plug 'itchyny/lightline.vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }   " then run :GoInstallBinaries (https://medium.com/@furkanbegen/go-development-with-vim-79cfa0a928b0)
+Plug 'jremmen/vim-ripgrep'
 call plug#end()
 
 
-lua <<EOF
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = "all",
-  highlight = {
-    enable = true
-  },
-  playground = {
-    enable = true,
-  },
-}
-EOF
+let g:SuperTabCrMapping=1 "supertab selects suggestion by tab
 
 let g:airline#extensions#tabline#enabled = 1
 
@@ -365,13 +358,13 @@ if !exists('g:airline_symbols')
 endif
 
 " unicode symbols
-let g:airline_left_sep = 'È'
+let g:airline_left_sep = '√à'
 let g:airline_left_sep = '?'
-let g:airline_right_sep = 'Ç'
+let g:airline_right_sep = '√á'
 let g:airline_right_sep = '?'
 let g:airline_symbols.linenr = '?'
 let g:airline_symbols.linenr = '?'
-let g:airline_symbols.linenr = '¦'
+let g:airline_symbols.linenr = '¬¶'
 let g:airline_symbols.branch = '?'
 let g:airline_symbols.paste = '?'
 let g:airline_symbols.paste = '?'
