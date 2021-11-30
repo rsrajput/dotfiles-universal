@@ -109,8 +109,8 @@ Plug 'szw/vim-maximizer'
 " THANKS BFREDL
 Plug 'bryall/contextprint.nvim'
 Plug 'tpope/vim-surround'
-Plug 'bling/vim-airline'
-Plug 'vim-airline/vim-airline'
+" Plug 'bling/vim-airline'
+" Plug 'vim-airline/vim-airline'
 Plug 'sukima/xmledit'
 Plug 'preservim/nerdtree'
 Plug 'scrooloose/nerdcommenter'
@@ -182,8 +182,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'sheerun/vim-polyglot'
 Plug 'nvie/vim-flake8'
 Plug 'arcticicestudio/nord-vim'
-" Plug 'itchyny/lightline.vim'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }   " then run :GoInstallBinaries (https://medium.com/@furkanbegen/go-development-with-vim-79cfa0a928b0)
 Plug 'jremmen/vim-ripgrep'
 call plug#end()
@@ -191,7 +190,7 @@ call plug#end()
 
 let g:SuperTabCrMapping=1 "supertab selects suggestion by tab
 
-let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#enabled = 1
 
 " Use <c-space> to trigger completion.
 if has('nvim')
@@ -255,7 +254,7 @@ nnoremap <leader>P "+p
 
 " popup resize
 nnoremap <leader>x :set lines=30 <bar> :set columns=100<cr>
-nnoremap <leader>v :AirlineTheme gruvbox<cr>
+" nnoremap <leader>v :AirlineTheme gruvbox<cr>
 
 " vim TODO
 nmap <Leader>tu <Plug>BujoChecknormal
@@ -353,32 +352,32 @@ au filetype go inoremap <buffer> . .<C-x><C-o>
 
 " air-line
 
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-
-" unicode symbols
-let g:airline_left_sep = '√à'
-let g:airline_left_sep = '?'
-let g:airline_right_sep = '√á'
-let g:airline_right_sep = '?'
-let g:airline_symbols.linenr = '?'
-let g:airline_symbols.linenr = '?'
-let g:airline_symbols.linenr = '¬¶'
-let g:airline_symbols.branch = '?'
-let g:airline_symbols.paste = '?'
-let g:airline_symbols.paste = '?'
-let g:airline_symbols.paste = '?'
-let g:airline_symbols.whitespace = '?'
-
-" airline symbols
-let g:airline_left_sep = '?'
-let g:airline_left_alt_sep = '?'
-let g:airline_right_sep = '?'
-let g:airline_right_alt_sep = '?'
-let g:airline_symbols.branch = '?'
-let g:airline_symbols.readonly = '?'
-let g:airline_symbols.linenr = '?'
-
-let g:airline_theme='gruvbox'
-let g:airline_powerline_fonts = 1
+" if !exists('g:airline_symbols')
+    " let g:airline_symbols = {}
+" endif
+" 
+" " unicode symbols
+" let g:airline_left_sep = '√à'
+" let g:airline_left_sep = '?'
+" let g:airline_right_sep = '√á'
+" let g:airline_right_sep = '?'
+" let g:airline_symbols.linenr = '?'
+" let g:airline_symbols.linenr = '?'
+" let g:airline_symbols.linenr = '¬¶'
+" let g:airline_symbols.branch = '?'
+" let g:airline_symbols.paste = '?'
+" let g:airline_symbols.paste = '?'
+" let g:airline_symbols.paste = '?'
+" let g:airline_symbols.whitespace = '?'
+" 
+" " airline symbols
+" let g:airline_left_sep = '?'
+" let g:airline_left_alt_sep = '?'
+" let g:airline_right_sep = '?'
+" let g:airline_right_alt_sep = '?'
+" let g:airline_symbols.branch = '?'
+" let g:airline_symbols.readonly = '?'
+" let g:airline_symbols.linenr = '?'
+" 
+" let g:airline_theme='gruvbox'
+" let g:airline_powerline_fonts = 1
